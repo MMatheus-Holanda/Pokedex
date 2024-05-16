@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="icon" href="icon-pokebola.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <figure id="logo-box" onclick="recarregarPag()">
+            <img id="logo" src="logo.png"></img>
+        </figure>
+        <input onkeydown="buscarPokemon()" type="text" id="busca" placeholder="Pesquisando...">
+    </header>
+
+    <main id="main">
+        <section id="section">
+        </section>
+
+        <section id="pokeModal_BG">
+            <div id="white_circle">
+                <div id="blue_circle"></div>
+            </div>
+            <button onclick="toggleModal()" id="btnClose"><i class='bx bx-x'></i></button>
+            <article id="pokeModal_CARD">
+                <img id="pokeModal_IMG" src="" alt="">
+            </article>
+            <div id="pokeModal_INFOS">
+                <h5 id="pokeModal_NAME">NOME:</h5>
+                <h5 id="pokeModal_TYPE">TIPO:</h5>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>    
+    <script src="scipt.js"></script>
+</body>
+
+</html>

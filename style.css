@@ -1,0 +1,178 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(211, 11, 11);
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 200;    
+    padding-right: 50px;   
+    border-bottom: 3px solid black;    
+}
+
+body{
+    background-color: rgba(76, 183, 245, 0.247);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo-box{
+    background-color: transparent;  
+    width: 240px;
+    height: 70px;  
+}
+
+#logo{
+    width: 240px;
+    height: 70px;
+    padding: 5px;    
+}
+
+.section{    
+    display:flex;
+    flex-wrap: wrap;  
+    height: 100vh; 
+    padding-top: 70px;   
+    z-index: 190;    
+}
+
+.card{
+    margin-top: 30px;
+    margin-left: 25px;      
+    height: 350px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;    
+}
+
+.card:hover{
+    border: 3px solid rgb(211, 11, 11);
+    transform: scale(1.05);
+}
+
+#busca{
+    height: 40px;
+    width: 250px;
+    border-radius: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+    outline: none;
+    border: 3px solid black;
+}
+
+#logo-box{
+    margin-top: 15px;
+    cursor: pointer;    
+}
+
+#pokeModal_BG{
+    background-color: rgba(211, 11, 11, 0.877);
+    height: 88%;    
+    width: 33%;
+    position: fixed;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 199;
+    border-radius: 40px 15px 15px 40px;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+
+#white_circle{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    border-radius: 60px;
+    border: 2px solid black;
+}
+
+#blue_circle{
+    height: 80px;
+    width: 80px;
+    background-color: rgba(76, 183, 245, 0.541);
+    margin-top: 8%;
+    margin-left: 8%;
+    border-radius: 60px;
+    border: 1px solid black;
+}
+
+#pokeModal_CARD{
+    background-color: white;     
+    height: 38%;
+    width: 65%;
+    border: 3px solid black;
+    border-radius: 10px;
+    position: fixed;
+    left: 18%;    
+    top: 18%;
+}
+
+#pokeModal_INFOS{    
+    position: fixed;
+    top: 65%;
+    left: 18%;
+    height: 28%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around ;
+    color: rgb(255, 196, 0);    
+    background-color:rgb(16, 155, 78);
+    border-radius: 10px;
+    border: 3px solid black;
+    padding: 3%;
+}
+
+#pokeModal_NAME, #pokeModal_TYPE{
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.active{
+    display: block !important;
+}
+
+#btnClose{
+    height: 5%;
+    width: 10%;
+    position: fixed;
+    top: 2%;
+    left: 89%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgb(255, 196, 0);    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bx-x{
+    font-size: 55px;
+    cursor: pointer;
+}
+
+.bx-x:hover{
+    color: rgb(207, 159, 0);
+    border: 2px solid rgb(207, 159, 0);
+    border-radius: 30px;
+}
+
+#pokeModal_IMG{
+    height: 100%;
+    width: 100%;
+}
